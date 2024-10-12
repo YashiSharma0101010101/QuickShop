@@ -55,13 +55,13 @@ public class SellerServiceImpl implements SellerService {
         return  sellerRepository.findByAge(age) .orElseThrow(() -> new EntityNotFoundException("Seller not found with id " + age));
     }
 
-    public Seller updateSeller(Integer id, SellerRequestDto sellerRequestDto) {
-        // First, check if the seller exists
-        if (!sellerRepository.existsById(id)) {
-            throw new EntityNotFoundException("Seller not found with id " + id);
-        }
-        return sellerRepository.save(sellerRequestDto); // Save the updated seller to the database
-    }
+//    public Seller updateSeller(Integer id, SellerRequestDto sellerRequestDto) {
+//        // First, check if the seller exists
+//        if (!sellerRepository.existsById(id)) {
+//            throw new EntityNotFoundException("Seller not found with id " + id);
+//        }
+//        return sellerRepository.save(sellerRequestDto); // Save the updated seller to the database
+//    }
     public void deleteSeller(Integer id) {
         // Check if the seller exists before attempting to delete
         if (!sellerRepository.existsById(id)) {

@@ -78,11 +78,11 @@ public class SellerController {
         }
     }
     //update seller info based on email id
-    @PutMapping("/update/{emailId}")
-    public ResponseEntity<Seller> updateSellerByEmailId(@PathVariable("emailId") String emailId, @RequestBody SellerRequestDto sellerRequestDto) {
-        Seller updatedSeller = sellerService.updateSeller(emailId,sellerRequestDto);
-        return ResponseEntity.ok(updatedSeller);
-    }
+//    @PutMapping("/update/{emailId}")
+//    public ResponseEntity<Seller> updateSellerByEmailId(@PathVariable("emailId") String emailId, @RequestBody SellerRequestDto sellerRequestDto) {
+//        Seller updatedSeller = sellerService.updateSeller(emailId,sellerRequestDto);
+//        return ResponseEntity.ok(updatedSeller);
+//    }
     //delete by id
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteSeller(@PathVariable("id") Integer id) {

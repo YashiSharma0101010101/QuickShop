@@ -18,6 +18,6 @@ public interface SellerService {
 
     public void deleteSeller(Integer id);
 
-    public Seller updateSeller(Integer id, SellerRequestDto sellerRequestDto);
+   // public Seller updateSeller(Integer id, SellerRequestDto sellerRequestDto);
 
 }
